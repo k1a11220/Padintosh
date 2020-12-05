@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
+import "../styles.css";
 
 const Clock = () => {
   const [currentTime, setCurrentTIme] = useState(new Date());
 
   useEffect(() => {
-    const timer = setInterval(() => setCurrentTIme(new Date()), 100);
+    const timer = setInterval(() => setCurrentTIme(new Date()), 1000);
     return function cleanUp() {
       clearInterval(timer);
     };
@@ -17,7 +18,7 @@ const Clock = () => {
   const minutes = currentTime.getMinutes();
 
   return (
-    <div>
+    <div className="clock-container">
       <p>{`${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}`}</p>
       <p>{`${day}day ${date}`}</p>
     </div>

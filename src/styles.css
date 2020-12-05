@@ -1,0 +1,68 @@
+* {
+  font-family: "-apple-system", "BlinkMacSystemFont", "Apple SD Gothic Neo", "Inter",
+    "Spoqa Han Sans", "Segoe UI", Sans-Serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: Apple SD Gothic Neo;
+  background-color: #000000;
+  color: green;
+}
+
+nav {
+  display: flex;
+  height: 5vh;
+  width: 98%;
+  justify-content: flex-end;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+
+li {
+  text-decoration: none;
+  color: white;
+  margin-top: 2vw;
+  margin-left: 2vw;
+}
+
+.clock-container {
+  display: flex;
+  width: 98%;
+  height: 90vh;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.clock-container > p:first-child {
+  font-size: 20vw;
+}
+
+.clock-container > p:nth-child(2) {
+  font-size: 4vw;
+}
+
+.toggle-cover {
+  display: flex;
+  align-items: center;
+  width: 55px;
+  height: 31px;
+  border-radius: 30px;
+  background-color: green;
+}
+
+.toggle-cover > div {
+  width: 25px;
+  height: 25px;
+  margin-left: 2.5px;
+  border-radius: 30px;
+  background-color: #fff;
+}

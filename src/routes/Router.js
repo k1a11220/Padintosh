@@ -4,16 +4,16 @@ import Hello from "routes/Hello";
 import Home from "routes/Home";
 import Navigation from "components/Navigation";
 
-const AppRouter = () => {
+const AppRouter = ({ toggleDark }) => {
   return (
     <HashRouter>
-      <Navigation />
+      <Navigation toggleDark={toggleDark} />
       <Switch>
         <Route exact path="/">
-          <Home />
+          <Hello />
         </Route>
-        <Route exact path="/hello">
-          <Hello></Hello>
+        <Route exact path="/home">
+          <Home />
         </Route>
       </Switch>
     </HashRouter>

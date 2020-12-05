@@ -1,7 +1,12 @@
 import React from "react";
+import HelloSvg from "components/HelloSvg";
 
 const Hello = () => {
-  return <div>응 녜미</div>;
+  return (
+    <>
+      <HelloSvg />
+    </>
+  );
 };
 
 export default Hello;
